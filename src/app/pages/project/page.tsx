@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Projects() {
   return (    
      <section className="text-center py-12 px-4">     
@@ -8,7 +10,7 @@ export default function Projects() {
             <div className="flex flex-col w-full mb-10 sm:flex-row">
                 <div className="w-full mb-10 sm:mb-0 sm:w-1/2 transition transform hover:scale-100 scale-90">
                     <div className="relative h-full ml-0 mr-0 sm:mr-10">
-                        <a href="/pages/project/project-1">
+                        <Link href="/pages/project/project-1">
                             <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-500 rounded-lg"></span>
                             <div className="relative h-full p-5 bg-white border-2 border-blue-500 rounded-lg">
                                 <div className="flex items-center -mt-1">
@@ -17,12 +19,12 @@ export default function Projects() {
                                 <p className="mt-3 mb-1 text-xs font-medium text-blue-500 uppercase">------------</p>
                                 <p className="mb-2 text-gray-600">A Portfolio Site that contains a Home Page, Contact, About Me, and Dynamic Projects Page using NextJS and TailwindCSS.</p>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="w-full sm:w-1/2 transition transform hover:scale-100 scale-90">
                     <div className="relative h-full ml-0 md:mr-10">
-                        <a href="/pages/project/project-2">
+                        <Link href="/pages/project/project-2">
                             <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-500 rounded-lg"></span>
                             <div className="relative h-full p-5 bg-white border-2 border-blue-500 rounded-lg">
                                 <div className="flex items-center -mt-1">  
@@ -31,7 +33,7 @@ export default function Projects() {
                             <p className="mt-3 mb-1 text-xs font-medium text-blue-500 uppercase">------------</p>
                             <p className="mb-2 text-gray-600">To be Announced</p>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

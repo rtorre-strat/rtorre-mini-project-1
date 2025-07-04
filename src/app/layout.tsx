@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Link from 'next/link';
 import "./globals.css";
+import Link from 'next/link'
 import Image from "next/image";
 
 
@@ -32,7 +32,7 @@ export default function RootLayout({
         <div className="bg-blue-800 p-6">
           <nav>
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-              <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+              <Link href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                   <Image
                     src="/strat_logo.png"
                     alt="Globe icon"
@@ -40,20 +40,20 @@ export default function RootLayout({
                     height={50}
                   />
                   <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
-              </a>
+              </Link>
               <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                   <li>
-                    <a href="/" className="block py-2 px-3 font-bold text-white bg-black-700 rounded-sm md:bg-transparent md:text-white-700 md:p-0 md:hover:text-gray-300 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+                    <Link href="/" className="block py-2 px-3 font-bold text-white bg-black-700 rounded-sm md:bg-transparent md:text-white-700 md:p-0 md:hover:text-gray-300 dark:text-white md:dark:text-blue-500" aria-current="page">Home</Link>
                   </li>
                   <li>
-                    <a href="/pages/project" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-gray-300 dark:hover:bg-gray-500 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+                    <Link href="/pages/project" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-gray-300 dark:hover:bg-gray-500 dark:hover:text-white md:dark:hover:bg-transparent">Projects</Link>
                   </li>
                   <li>
-                    <a href="/pages/aboutMe" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-gray-300 dark:hover:bg-gray-500 dark:hover:text-white md:dark:hover:bg-transparent">About Me</a>
+                    <Link href="/pages/aboutMe" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-gray-300 dark:hover:bg-gray-500 dark:hover:text-white md:dark:hover:bg-transparent">About Me</Link>
                   </li>
                   <li>
-                    <a href="/pages/contact" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-gray-300 dark:hover:bg-gray-500 dark:hover:text-white md:dark:hover:bg-transparent">Contract</a>
+                    <Link href="/pages/contact" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 dark:text-white md:dark:hover:text-gray-300 dark:hover:bg-gray-500 dark:hover:text-white md:dark:hover:bg-transparent">Contract</Link>
                   </li>
                 </ul>
               </div>
